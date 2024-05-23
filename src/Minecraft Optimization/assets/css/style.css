@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 body {
 	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
 	font-size: 1rem;
