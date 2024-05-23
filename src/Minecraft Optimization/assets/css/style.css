@@ -2,9 +2,9 @@
 
 body {
 	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
+	font-size: 1rem;
+	padding: 1rem;
+	line-height: 1.4rem;
 	word-wrap: break-word;
 	background-color: #1e1e1e;
 	color: #d4d4d4;
@@ -88,11 +88,11 @@ hr {
 }
 
 h1 {
-	padding-bottom: 0.3em;
+	padding-bottom: 0.3rem;
 	line-height: 1.2;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	font-size: 30px;
+	font-size: 2rem;
 }
 
 h1, h2, h3 {
