@@ -132,9 +132,11 @@ table > tbody > tr + tr > td {
 .ultra {
 	color: #ff3ea3;
 }
-
 .option {
 	color: #3d7ff1;
+}
+.tips {
+	color: #d8a8b4;
 }
 
 .pare {
