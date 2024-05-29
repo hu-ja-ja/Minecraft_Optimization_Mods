@@ -67,7 +67,7 @@ img {
 
 a {
 	text-decoration: none;
-	color: #3387e7;
+	color: #00c3ff;
 }
 
 a:hover {
@@ -120,6 +120,10 @@ table > tbody > tr + tr > td {
 	border-top: 1px solid;
 }
 
+.pare {
+	font-size: 9px;
+}
+
 .low {
 	color: #1e90ff;
 }
@@ -133,28 +137,8 @@ table > tbody > tr + tr > td {
 	color: #ff3ea3;
 }
 .option {
-	color: #3d7ff1;
+	color: #c573be;
 }
 .tips {
 	color: #c573be;
-}
-
-.pare {
-	font-size: 9px;
-}
-.situ {
-	color: #1e90ff;
-	font-size: 9.5px;
-}
-.gene {
-	color: #ffa500;
-	font-size: 9.5px;
-}
-.bet {
-	color: #ff4500;
-	font-size: 9.5px;
-}
-.esse {
-	color: #ff3ea3;
-	font-size: 9.5px;
 }
