@@ -1,5 +1,7 @@
 # Minecraft Optimization Mods
 
+## ※整備中です
+
 Minecraftを快適に遊ぶためのいわゆる軽量化Modリストです
 
 便利系やバグ修正など軽量化を目的としていないModはあえて掲載していません
