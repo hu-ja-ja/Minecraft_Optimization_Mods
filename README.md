@@ -14,3 +14,7 @@ Minecraftを快適に遊ぶためのいわゆる軽量化Modリスト
 現状一人で編集している都合上、主観マシマシで間違っている点もあると思います:/
 
 何か間違っているところを発見されたり、要望、追加して欲しいModなどがありましたら、[Issue](https://github.com/hu-ja-ja/Minecraft-Optimization-Mods/issues)か[Pull request](https://github.com/hu-ja-ja/Minecraft-Optimization-Mods/pulls)を投げていただけるとありがたいです
+
+---
+
+#### [旧リポジトリ](https://github.com/TaichiServer/modDescription)
