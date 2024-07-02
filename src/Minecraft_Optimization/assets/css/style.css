@@ -124,30 +124,6 @@ table > tbody > tr + tr > td {
 	font-size: 9px;
 }
 
-.low {
-	color: #1e90ff;
-}
-.sub_low {
-	color: #1e90ff;
-}
-.midi {
-	color: #ffa500;
-}
-.sub_midi {
-	color: #ffa500;
-}
-.high {
-	color: #ff4500;
-}
-.sub_high {
-	color: #ff4500;
-}
-.ultra {
-	color: #ff3ea3;
-}
-.sub_ultra {
-	color: #ff3ea3;
-}
 .option {
 	color: #c573be;
 }
