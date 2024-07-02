@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title>Minecraft Optimization JP</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+<body>
+
+<h1 id="minecraft-optimization-mods">Minecraft Optimization Mods</h1>
+<h3><a href="../../../">≪MainPage</a></h3>
+<h2 id="mc-1201-fabric">All Versions Forge</h2>
+
+導入形態<br>
+白字 ... 必要<br>
+<span style="color: #c573be;">紫字</span> ... オプション<br>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Mod名</th>
+<th style="text-align:left">URL</th>
+<th style="text-align:left">安定性</th>
+<th style="text-align:left">説明 + <h class="tips">Tips</h></th>
+<th style="text-align:left">競合Mod</th>
+<th style="text-align:left">導入形態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Alternate Current</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/alternate-current/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">△<br>(後述)</td>
+<td style="text-align:left">Alternate Currentは、レッドストーンダスト計算を最適化しブロックの更新の数を減らし負荷を軽減します。<br><h class="tips">ただし、0-tickやブロックコンベアなどの一部の高度な装置が機能しないことがあります。<sup>※最近のアップデートで更新順序を変更できるようになったため、改善されている可能性があります。</sup></h></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">サーバー･シングル</td>
+</tr>
+<tr>
+<td style="text-align:left">BadOptimizations</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/badoptimizations/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">BadOptimizationsは、他のModが行っていない微細な最適化を集めたModです。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Brute force Rendering Culling</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/brute-force-rendering-culling" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">×</td>
+<td style="text-align:left">Brute force Rendering Cullingは、目に見えないチャンクを追加で<a href="https://www.toaru-gamedesigner.com/entry/2021/09/04/%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%AE%E6%8F%8F%E7%94%BB%E5%87%A6%E7%90%86%E3%80%8C%E3%82%AB%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%8D%E3%81%A8%E3%81%AF%E3%80%903%E7%A8%AE%E9%A1%9E%E3%81%AE%E8%A8%AD" target="_blank">カリング</a>し、</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Cull Leaves</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/cull-leaves/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Cull Leavesは、葉っぱ内側のレイヤーの<a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>をスキップします。<br><h class="tips">Cull Leavesは、葉っぱの最外部のみを<a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>します。</h></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Dynamic FPS</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/dynamic-fps/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Dynamic FPSは、ウィンドウがアクティブでない場合に<a href="https://gamemakers.jp/glossary/%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e3%83%ac%e3%83%bc%e3%83%88%ef%bc%88frame-rate%ef%bc%89/" target="_blank">フレームレート</a>を下げることで、GPUとCPUの使用量を自動的に削減します。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Embeddium</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/embeddium/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Embeddiumは、Sodiumプロジェクトから分裂し独自路線を歩み始めた軽量化Mod。<h class="tips">基本的にSodiumのアドオンは使用可能だが、<strong>Sodiumとは共存できない</strong>のでどちらかを選ぶ必要がある。</h></td>
+<td style="text-align:left">Sodium</td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Entity Collision FPS Fix</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/entity-collision-fps-fix/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">未検証</td>
+<td style="text-align:left">Entity Collision FPS Fixは、既にサーバー側で処理されたクライアント側でのエンティティの衝突を計算をスキップします。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Entity Culling</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/entityculling/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Entity Cullingは、他のCPUコア/スレッドを利用して、カメラからすべてのブロック/エンティティへの<a href="https://monobook.org/wiki/%E3%83%91%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%B0" target="_blank">パストレーシング</a>を実に素早く行い、それらが見えるか見えないかを判断します。<br><a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>中に見えていないものは、自分の後ろにあるエンティティと同じようにスキップされます。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<!--↓ 壊れてる-->
+<tr>
+<td style="text-align:left">Exordium</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/exordium/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">△</td>
+<td style="text-align:left">Exordiumは、<a href="https://gamemakers.jp/glossary/hud/" target="_blank">HUD</a>をより低い固定<a href="https://gamemakers.jp/glossary/%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e3%83%ac%e3%83%bc%e3%83%88%ef%bc%88frame-rate%ef%bc%89/" target="_blank">フレームレート</a>で<a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>(設定で設定可能)します。<br><h class="tips">ただし、他Modとの互換性があまり高くなく、ImmediatelyFastを用いてもほぼ同等の効果が得られる他、作者も積極的にサポートを行うつもりがないと発言(Discordより)しているため、非推奨です。</h></td>
+<td style="text-align:left">Canvas ,<br> Caxton ,<br><span style="color: #585858;">Vulkan</span> ,<br> and More</td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Fast Paintings</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/fast-paintings/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Fast Paintingsは、絵画の<a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>をブロックと同等の形式にし、パフォーマンスを向上させ、カスタムモデルを持てるようにします。</td>
+<td style="text-align:left"><span style="color: #585858;">Vulkan</span></td>
+<td style="text-align:left">サーバー･シングル<br>起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Ferrite Core</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/ferrite-core/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Ferrite Coreは、いくつかの異なる方法でマインクラフトのメモリ使用量を減らします。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><h class="option">サーバー･シングル</h><br><h class="option">起動構成</h></td>
+</tr>
+<tr>
+<td style="text-align:left">FeyTweaks</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/feytweaks/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">FeyTweaksは、看板や、ビーコンのビームを最適化します。</td>
+<td style="text-align:left"><span style="color: #585858;">Vulkan</span></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Fps Reducer</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/fps-reducer/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Fps Reducerは、ユーザー操作がない場合(インベントリ画面やメニュー画面を表示している際も)に<a href="https://gamemakers.jp/glossary/%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e3%83%ac%e3%83%bc%e3%83%88%ef%bc%88frame-rate%ef%bc%89/" target="_blank">フレームレート</a>を下げることで、GPUとCPUの使用量を自動的に削減します。</td>
+<td style="text-align:left"><span style="color: #585858;">Vulkan</span></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">ImmediatelyFast</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/immediatelyfast/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">ImmediatelyFastは、クライアントのイミディエイトモードの<a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>性能を向上させます。</td>
+<td style="text-align:left"><span style="color: #585858;">Vulkan</span></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Ksyxis</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/ksyxis/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Ksyxisは、近くのチャンクをロードしないことで、ワールドの読み込みを素早く完了させます。(バニラのマインクラフトはワールドを開くたびに21x21のチャンクをロードします。)<br><h class="tips">※ModernFixにはスポーンチャンクを<b>完全に</b>削除する機能がありますが、どちらを使うかはお好みで。</h></td>
+<td style="text-align:left">Fastload</td>
+<td style="text-align:left"><h class="option">サーバー･シングル</h><br><h class="option">起動構成</h></td>
+</tr>
+<tr>
+<td style="text-align:left">Memory Leak Fix</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/memoryleakfix/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Memory Leak Fixはマインクラフトにある複数の<a href="https://wa3.i-3-i.info/word16066.html" target="_blank">メモリリーク</a>を修正します。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><h class="option">サーバー･シングル</h><br><h class="option">起動構成</h></td>
+</tr>
+<tr>
+<td style="text-align:left">ModernFix</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/modernfix/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">ModernFixは、パフォーマンスを向上させ、メモリ使用量を減らし、多くのバグを修正します。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><h class="option">サーバー･シングル</h><br><h class="option">起動構成</h></td>
+</tr>
+<tr>
+<td style="text-align:left">Noisium</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/noisium/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Noisiumは、他のModが変更していないいくつかのワールド生成関数を変更します。これにより、新しいチャンクを生成する際の速度が20 ~ 30%向上します。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">サーバー･シングル</td>
+</tr>
+<tr>
+<td style="text-align:left">Remove Reloading Screen</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/rrls/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">○</td>
+<td style="text-align:left">Remove Reloading Screenは、リソースパックを読み込む際のロード画面を無くし、読み込み中でも操作ができるようにします。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left">Seaborgium</td>
+<td style="text-align:left"><a href="https://modrinth.com/mod/seaborgium/versions" target="_blank">Modrinth</a><img src="https://modrinth.com/favicon.ico" width="16" height="16" alt="modrinth icon"></td>
+<td style="text-align:left">未検証</td>
+<td style="text-align:left">Seaborgiumは、他のModが行っていない微細な最適化を実装したModです。<h class="tips">例えば、HUD上に大量のハートが<a href="https://gamemakers.jp/glossary/%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%ef%bc%88rendering%ef%bc%89/" target="_blank">レンダリング</a>されている場合などに効果を発揮します。</h></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">起動構成</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<!-- Template
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+-->
+</tbody>
+</table>
+</body>
+</html>
