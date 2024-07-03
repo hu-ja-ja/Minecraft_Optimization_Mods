@@ -32,6 +32,12 @@ textarea:focus {
 	outline-offset: -1px;
 }
 
+hr {
+	border: 0;
+	height: 1px;
+	border-bottom: 1px solid;
+}
+
 h1 {
 	padding-bottom: 0.6rem;
 	line-height: 1.2;
