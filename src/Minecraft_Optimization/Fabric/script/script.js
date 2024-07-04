@@ -1,23 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 関数の定義
     function applyTableChanges(pageName, stringsDataPath, dataFilePath, tableBodyId) {
         const currentPage = pageName;
         console.log("Current Page:", currentPage);
 
-        // 非表示にする文字列データを読み込む
         fetch(stringsDataPath)
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();
             })
             .then(stringsData => {
-                const hideStrings = stringsData[currentPage] || [];
-                console.log("Hide Strings:", hideStrings);
+                const dataToProcess = stringsData[currentPage] || {};
+                const minusRows = dataToProcess.minus || [];
+                const replaceRows = dataToProcess.replace || [];
+                console.log("Minus Rows:", minusRows);
+                console.log("Replace Rows:", replaceRows);
 
-                // テーブルのtbody要素を取得
                 const tbody = document.getElementById(tableBodyId);
 
-                // データファイルを読み込む
                 fetch(dataFilePath)
                     .then(response => {
                         if (!response.ok) throw new Error('Network response was not ok');
@@ -37,26 +36,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         // 取得した行をループ処理
                         rows.forEach(row => {
-                            // 行の最初の<td>要素の内容を取得
                             const firstCellContent = row.querySelector("td[style='text-align:left']").textContent.trim();
+                            const newRow = row.cloneNode(true);
 
-                            // マップに存在する場合は置換、存在しない場合は追加
+                            // 行を追加または置換
                             if (existingRowsMap.has(firstCellContent)) {
                                 const existingRow = existingRowsMap.get(firstCellContent);
-                                existingRow.innerHTML = row.innerHTML;
-                                const shouldHide = hideStrings.includes(firstCellContent);
-                                if (shouldHide) {
-                                    existingRow.style.display = "none"; // 非表示にする
-                                } else {
-                                    existingRow.style.display = ""; // 表示する
+                                existingRow.innerHTML = newRow.innerHTML;
+                            } else {
+                                tbody.appendChild(newRow);
+                                existingRowsMap.set(firstCellContent, newRow);
+                            }
+                        });
+
+                        // minus に指定された行を削除
+                        minusRows.forEach(key => {
+                            if (existingRowsMap.has(key)) {
+                                const existingRow = existingRowsMap.get(key);
+                                existingRow.remove();
+                                existingRowsMap.delete(key);
+                            }
+                        });
+
+                        // replace に指定された行を置換
+                        replaceRows.forEach(replaceObj => {
+                            const { key, index, new_value } = replaceObj;
+                            if (existingRowsMap.has(key)) {
+                                const existingRow = existingRowsMap.get(key);
+                                const targetCell = existingRow.querySelectorAll("td")[index];
+                                if (targetCell) {
+                                    targetCell.textContent = new_value;
                                 }
                             } else {
-                                const shouldHide = hideStrings.includes(firstCellContent);
-                                const newRow = row.cloneNode(true);
-                                if (shouldHide) {
-                                    newRow.style.display = "none"; // 非表示にする
-                                }
-                                tbody.appendChild(newRow);
+                                console.warn(`Row with key "${key}" not found for replacement.`);
                             }
                         });
                     })
@@ -69,12 +81,11 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
-    // 関数呼び出し
     applyTableChanges(
-        window.location.pathname.split("/").pop(), // 現在のページ名
-        './script/string.json',                    // 非表示にするデータのパス
-        './MC_Opti_JP_All_Fabric.html',            // データファイルのパス
-        'data-table-body'                          // テーブルのtbody要素のID
+        window.location.pathname.split("/").pop(),
+        './script/string.json',
+        './MC_Opti_JP_All_Fabric.html',
+        'data-table-body'
     );
 });
 
