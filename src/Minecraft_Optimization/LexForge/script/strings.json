@@ -1,0 +1,24 @@
+{
+    "hoge.html": {
+        "minus": [
+            "Mod1",
+            "Mod2"
+        ],
+        "replace": [
+            {
+                "key": "Mod1",
+                "changes": [
+                    { "index": 2, "new_value": "△" },
+                    { "index": 3, "new_value": "Mod1は○○します。" }
+                ]
+            },
+            {
+                "key": "Mod2",
+                "changes": [
+                    { "index": 2, "new_value": "○" },
+                    { "index": 3, "new_value": "Mod2は○○します。" }
+                ]
+            }
+        ]
+    }
+}

@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         });
                     })
                     .catch(error => {
-                        console.error('Fetch error (MC_Opti_JP_All_Fabric.html):', error);
+                        console.error('Fetch error (MC_Opti_JP_All_LexForge.html):', error);
                     });
             })
             .catch(error => {
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     applyTableChanges(
         window.location.pathname.split("/").pop(), // 現在のページ名
         './script/strings.json',                    // 非表示や置換するデータのパス
-        './MC_Opti_JP_All_Fabric.html',            // すべてのデータが含まれるHTMLファイルのパス
+        './MC_Opti_JP_All_LexForge.html',            // すべてのデータが含まれるHTMLファイルのパス
         'data-table-body'                          // テーブルのtbody要素のID
     );
 });

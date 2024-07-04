@@ -1,0 +1,119 @@
+{
+    "MC_Opti_JP_MC1182_Fabric.html": {
+        "minus": [
+            "Async Pack Scan",
+            "BadOptimizations",
+            "Collision Fix",
+            "Embeddium",
+            "Entity Collision FPS Fix",
+            "FastAnim",
+            "Fast Paintings",
+            "Faster Random",
+            "MC-249136 Fix",
+            "MCMTFabric",
+            "MCMTFabricCE",
+            "Methane",
+            "More Culling Extra",
+            "Noisium",
+            "Nvidium",
+            "OptiPainting",
+            "StutterFix",
+            "ThreadTweak"
+        ],
+        "replace": [
+            {
+                "key": "Starlight",
+                "changes": [
+                    { "index": 2, "new_value": "△" },
+                    { "index": 3, "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？" }
+                ]
+            }
+        ]
+    },
+
+    "MC_Opti_JP_MC1192_Fabric.html": {
+        "minus": [
+            "Async Pack Scan",
+            "Brute force Rendering Culling",
+            "Collision Fix",
+            "Embeddium",
+            "Fast Paintings",
+            "MCMTFabric",
+            "Noisium",
+            "Nvidium",
+            "Seaborgium",
+            "ThreadTweak"
+        ],
+        "replace": [
+            {
+                "key": "Starlight",
+                "changes": [
+                    { "index": 2, "new_value": "△" },
+                    { "index": 3, "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？" }
+                ]
+            }
+        ]
+    },
+
+    "MC_Opti_JP_MC1194_Fabric.html": {
+        "minus": [
+            "Async Pack Scan",
+            "Brute force Rendering Culling",
+            "Collision Fix",
+            "Cyclotrimethylenetrinitramine",
+            "Embeddium",
+            "Entity Collision FPS Fix",
+            "Fast Paintings",
+            "ForgetMeChunk",
+            "MCMTFabric",
+            "MCMTFabricCE",
+            "Noisium",
+            "ThreadTweak"
+        ],
+        "replace": [
+            {
+                "key": "Starlight",
+                "changes": [
+                    { "index": 2, "new_value": "△" },
+                    { "index": 3, "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？" }
+                ]
+            }
+        ]
+    },
+
+    "MC_Opti_JP_MC1201_Fabric.html": {
+        "minus": [
+            "Cyclotrimethylenetrinitramine",
+            "Entity Collision FPS Fix",
+            "ForgetMeChunk",
+            "MCMTFabric",
+            "MCMTFabricCE",
+            "Phosphor",
+            "Seaborgium",
+            "Smooth Boot"
+        ],
+        "replace": [
+        ]
+    },
+
+    "MC_Opti_JP_MC1204_Fabric.html": {
+        "minus": [
+            "Chunkumulator",
+            "Cyclotrimethylenetrinitramine",
+            "Entity Collision FPS Fix",
+            "ForgetMeChunk",
+            "MCMTFabric",
+            "MCMTFabricCE",
+            "Phosphor",
+            "Seaborgium",
+            "Smooth Boot"
+        ],
+        "replace": [
+            {
+                "key": "Async Pack Scan",
+                "index": 3,
+                "new_value": "Async Pack Scanは、リソースパック選択画面を最適解します。"
+            }
+        ]
+    }
+}
