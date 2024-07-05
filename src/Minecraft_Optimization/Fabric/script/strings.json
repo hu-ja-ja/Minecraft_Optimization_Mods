@@ -111,8 +111,9 @@
         "replace": [
             {
                 "key": "Async Pack Scan",
-                "index": 3,
-                "new_value": "Async Pack Scanは、リソースパック選択画面を最適解します。"
+                "changes": [
+                    { "index": 3, "new_value": "Async Pack Scanは、リソースパック選択画面を最適解します。" }
+                ]
             }
         ]
     }
