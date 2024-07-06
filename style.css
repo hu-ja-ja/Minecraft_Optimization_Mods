@@ -43,9 +43,13 @@ h1 {
 	line-height: 1.2;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	font-size: 2.1rem;
+	font-size: 1.6rem;
 }
 
 h1, h2, h3 {
 	font-weight: 1;
+}
+
+.title {
+	font-size: 2.1rem;
 }
