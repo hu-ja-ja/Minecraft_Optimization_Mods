@@ -24,13 +24,18 @@
             {
                 "key": "Starlight",
                 "changes": [
-                    { "index": 2, "new_value": "△" },
-                    { "index": 3, "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？" }
+                    {
+                        "index": 2,
+                        "new_value": "△"
+                    },
+                    {
+                        "index": 3,
+                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？"
+                    }
                 ]
             }
         ]
     },
-
     "MC_Opti_JP_MC1192_Fabric.html": {
         "minus": [
             "Async Pack Scan",
@@ -48,13 +53,18 @@
             {
                 "key": "Starlight",
                 "changes": [
-                    { "index": 2, "new_value": "△" },
-                    { "index": 3, "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？" }
+                    {
+                        "index": 2,
+                        "new_value": "△"
+                    },
+                    {
+                        "index": 3,
+                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？"
+                    }
                 ]
             }
         ]
     },
-
     "MC_Opti_JP_MC1194_Fabric.html": {
         "minus": [
             "Async Pack Scan",
@@ -75,13 +85,18 @@
             {
                 "key": "Starlight",
                 "changes": [
-                    { "index": 2, "new_value": "△" },
-                    { "index": 3, "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？" }
+                    {
+                        "index": 2,
+                        "new_value": "△"
+                    },
+                    {
+                        "index": 3,
+                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？"
+                    }
                 ]
             }
         ]
     },
-
     "MC_Opti_JP_MC1201_Fabric.html": {
         "minus": [
             "Cyclotrimethylenetrinitramine",
@@ -93,10 +108,8 @@
             "Seaborgium",
             "Smooth Boot"
         ],
-        "replace": [
-        ]
+        "replace": []
     },
-
     "MC_Opti_JP_MC1204_Fabric.html": {
         "minus": [
             "Chunkumulator",
@@ -113,7 +126,10 @@
             {
                 "key": "Async Pack Scan",
                 "changes": [
-                    { "index": 3, "new_value": "Async Pack Scanは、リソースパック選択画面を最適解します。" }
+                    {
+                        "index": 3,
+                        "new_value": "Async Pack Scanは、リソースパック選択画面を最適解します。"
+                    }
                 ]
             }
         ]
