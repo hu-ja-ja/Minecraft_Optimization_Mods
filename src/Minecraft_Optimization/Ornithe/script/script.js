@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", async function() {
+document.addEventListener("DOMContentLoaded", async function () {
     // JSONファイルを非同期に取得する関数
     async function fetchJson(url) {
         const response = await fetch(url);
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             const dataToProcess = stringsData[pageName] || {};
             const minusRows = dataToProcess.minus || []; // 削除する行のデータ
             const replaceRows = dataToProcess.replace || []; // 置換する行のデータ
-            
+
             // テーブルのtbody要素を取得
             const tbody = document.getElementById(tableBodyId);
 
