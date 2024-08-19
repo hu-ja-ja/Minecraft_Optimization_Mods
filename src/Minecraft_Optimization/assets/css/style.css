@@ -9,9 +9,6 @@ body {
 	word-wrap: break-word;
 	background-color: #1e1e1e;
 	color: #d4d4d4;
-}
-
-body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
 	padding: 0 12px;
 }
@@ -105,7 +102,6 @@ table {
 }
 
 table > thead > tr > th {
-	text-align: left;
 	border-bottom: 1px solid;
 }
 
