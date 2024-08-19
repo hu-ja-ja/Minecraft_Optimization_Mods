@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             // 現在のテーブルの行をマップに格納
             const existingRowsMap = new Map();
             Array.from(tbody.querySelectorAll("tr")).forEach(existingRow => {
-                const key = existingRow.querySelector("td[style='text-align:left']").textContent.trim();
+                const key = existingRow.querySelector("td").textContent.trim();
                 existingRowsMap.set(key, existingRow);
             });
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // 取得した行をループ処理し、必要に応じて追加または置換
             rows.forEach(row => {
-                const firstCellContent = row.querySelector("td[style='text-align:left']").textContent.trim();
+                const firstCellContent = row.querySelector("td").textContent.trim();
                 const newRow = row.cloneNode(true);
 
                 if (existingRowsMap.has(firstCellContent)) {
