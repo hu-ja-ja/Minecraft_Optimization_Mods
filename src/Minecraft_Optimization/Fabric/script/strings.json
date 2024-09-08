@@ -2,13 +2,18 @@
     "MC_Opti_JP_MC1182_Fabric.html": {
         "minus": [
             "Async Pack Scan",
+            "AdvancementsScreenOptimizer",
             "BadOptimizations",
+            "BlinkLoad",
             "Collision Fix",
+            "Cull Particles",
             "Embeddium",
             "Entity Collision FPS Fix",
             "FastAnim",
             "Fast Paintings",
+            "Faster Particle Collisions",
             "Faster Random",
+            "Hydrogen",
             "MC-249136 Fix",
             "MCMTFabric",
             "MCMTFabricCE",
@@ -17,6 +22,11 @@
             "Noisium",
             "Nvidium",
             "OptiPainting",
+            "Palladium",
+            "Particle Core",
+            "ScalableLux",
+            "Sodium Leaf Culling",
+            "Starlight Legacy",
             "StutterFix",
             "ThreadTweak"
         ],
@@ -30,7 +40,16 @@
                     },
                     {
                         "index": 3,
-                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？"
+                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？</h>"
+                    }
+                ]
+            },
+            {
+                "key": "Cull Particles Fabric",
+                "changes": [
+                    {
+                        "index": 3,
+                        "new_value": "Cull Particles Fabricは、パーティクルの見えない部分を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。<br><h class=\"tips\">※2.0のjarが1.19.2まで使えるらしいです。</h>"
                     }
                 ]
             }
@@ -38,15 +57,25 @@
     },
     "MC_Opti_JP_MC1192_Fabric.html": {
         "minus": [
+            "AdvancementsScreenOptimizer",
             "Async Pack Scan",
+            "BlinkLoad",
             "Brute force Rendering Culling",
             "Collision Fix",
+            "Cull Particles",
             "Embeddium",
             "Fast Paintings",
+            "Faster Particle Collisions",
+            "Hydrogen",
             "MCMTFabric",
             "Noisium",
             "Nvidium",
+            "Palladium",
+            "Particle Core",
+            "ScalableLux",
             "Seaborgium",
+            "Sodium Leaf Culling",
+            "Starlight Legacy",
             "ThreadTweak"
         ],
         "replace": [
@@ -59,7 +88,16 @@
                     },
                     {
                         "index": 3,
-                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？"
+                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？</h>"
+                    }
+                ]
+            },
+            {
+                "key": "Cull Particles Fabric",
+                "changes": [
+                    {
+                        "index": 3,
+                        "new_value": "Cull Particles Fabricは、パーティクルの見えない部分を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。<br><h class=\"tips\">※2.0のjarが1.19.2まで使えるらしいです。</h>"
                     }
                 ]
             }
@@ -67,18 +105,29 @@
     },
     "MC_Opti_JP_MC1194_Fabric.html": {
         "minus": [
+            "Advancements Debug",
+            "AdvancementsScreenOptimizer",
             "Async Pack Scan",
             "Achievements Optimizer",
+            "BlinkLoad",
             "Brute force Rendering Culling",
             "Collision Fix",
+            "Cull Particles",
+            "Cull Particles Fabric",
             "Cyclotrimethylenetrinitramine",
             "Embeddium",
             "Entity Collision FPS Fix",
             "Fast Paintings",
+            "Faster Particle Collisions",
             "ForgetMeChunk",
+            "Hydrogen",
             "MCMTFabric",
             "MCMTFabricCE",
             "Noisium",
+            "Particle Core",
+            "ScalableLux",
+            "Sodium Leaf Culling",
+            "Starlight Legacy",
             "ThreadTweak"
         ],
         "replace": [
@@ -91,7 +140,7 @@
                     },
                     {
                         "index": 3,
-                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？"
+                        "new_value": "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※ちょくちょくバグあるかも...？</h>"
                     }
                 ]
             }
@@ -99,28 +148,81 @@
     },
     "MC_Opti_JP_MC1201_Fabric.html": {
         "minus": [
+            "Advancements Debug",
+            "AdvancementsScreenOptimizer",
+            "Cull Clouds",
+            "Cull Particles",
+            "Cull Particles Fabric",
             "Cyclotrimethylenetrinitramine",
             "Entity Collision FPS Fix",
             "ForgetMeChunk",
+            "Hydrogen",
             "MCMTFabric",
             "MCMTFabricCE",
             "Phosphor",
+            "ScalableLux",
             "Seaborgium",
-            "Smooth Boot"
+            "Smooth Boot",
+            "Sodium Leaf Culling",
+            "Starlight Legacy"
         ],
         "replace": []
     },
     "MC_Opti_JP_MC1204_Fabric.html": {
         "minus": [
+            "Advancements Debug",
+            "AdvancementsScreenOptimizer",
+            "BlinkLoad",
             "Chunkumulator",
+            "Cull Clouds",
+            "Cull Particles",
+            "Cull Particles Fabric",
             "Cyclotrimethylenetrinitramine",
             "Entity Collision FPS Fix",
+            "Fastload",
             "ForgetMeChunk",
+            "Hydrogen",
             "MCMTFabric",
             "MCMTFabricCE",
             "Phosphor",
+            "ScalableLux",
             "Seaborgium",
-            "Smooth Boot"
+            "Smooth Boot",
+            "Sodium Leaf Culling",
+            "Starlight Legacy"
+        ],
+        "replace": [
+            {
+                "key": "Async Pack Scan",
+                "changes": [
+                    {
+                        "index": 3,
+                        "new_value": "Async Pack Scanは、リソースパック選択画面を最適解します。"
+                    }
+                ]
+            }
+        ]
+    },
+    "MC_Opti_JP_MC1211_Fabric.html": {
+        "minus": [
+            "Advancements Debug",
+            "BlinkLoad",
+            "Chunkumulator",
+            "Cull Clouds",
+            "Cull Particles Fabric",
+            "Cyclotrimethylenetrinitramine",
+            "Entity Collision FPS Fix",
+            "Fastload",
+            "ForgetMeChunk",
+            "Hydrogen",
+            "Icterine",
+            "MCMTFabric",
+            "MCMTFabricCE",
+            "Palladium",
+            "Phosphor",
+            "Seaborgium",
+            "Smooth Boot",
+            "Starlight Legacy"
         ],
         "replace": [
             {
