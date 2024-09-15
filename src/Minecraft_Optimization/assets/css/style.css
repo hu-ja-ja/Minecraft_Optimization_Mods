@@ -34,6 +34,22 @@ body {
 	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
 }
 
+#downloadBtn {
+    background-color: #1bd96a; /* ボタンの背景色 */
+    color: #1e1e1e;             /* 文字色 */
+    padding: 5px 10px;       /* ボタンの内側の余白 */
+    font-size: 16px;          /* フォントサイズ */
+	font-family: inherit;
+	font-weight: 700;
+    border: none;             /* 枠線をなくす */
+    border-radius: 5px;       /* 角を丸める */
+    cursor: pointer;          /* カーソルをポインタにする */
+}
+
+#downloadBtn:hover {
+    background-color: #22ff84; /* ホバー時の背景色 */
+}
+
 body.scrollBeyondLastLine {
 	margin-bottom: calc(100vh - 22px);
 }
