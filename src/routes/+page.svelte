@@ -1,3 +1,14 @@
+<script lang="ts" context="module">
+    export const load = ({ params }: { params: { mc_ver: string } }) => {
+        const { mc_ver } = params; // mc_verを取得
+        return { props: { mc_ver } }; // mc_verをコンポーネントに渡します
+    };
+</script>
+
+<script>
+    export let mc_ver; // 受け取ったmc_verを使用
+</script>
+
 <body>
 <h1><h class="title">Minecraft Optimization Mods</h></h1>
     Minecraftを快適に遊ぶためのいわゆる軽量化Modリスト<br>
@@ -11,16 +22,17 @@
     現状一人で編集している都合上、主観マシマシで間違っている点もあると思います:/<br>
     何か間違っているところを発見されたり、要望がありましたら<a href="https://github.com/hu-ja-ja/Minecraft-Optimization-Mods/issues/new" target="_blank">Issue</a>か<a href="https://github.com/hu-ja-ja/Minecraft-Optimization-Mods/pulls" target="_blank">Pull request</a>を投げていただけるとありがたいです
     <h1>Fabric</h1>
-    <h3><a href="./src/Minecraft_Optimization/Fabric/MC_Opti_JP_MC1201_Fabric.html">MC 1.20.1 Fabric</a></h3>
-    <h3><a href="./src/Minecraft_Optimization/Fabric/MC_Opti_JP_MC1194_Fabric.html">MC 1.19.4 Fabric</a></h3>
-    <h3><a href="./src/Minecraft_Optimization/Fabric/MC_Opti_JP_MC1192_Fabric.html">MC 1.19.2 Fabric</a></h3>
-    <h3><a href="./src/Minecraft_Optimization/Fabric/MC_Opti_JP_MC1182_Fabric.html">MC 1.18.2 Fabric</a></h3>
+    <h1>{mc_ver}</h1>
+    <h3><a href="/Fabric/1201">MC 1.20.1 Fabric</a></h3>
+    <h3><a href="/Fabric/1194">MC 1.19.4 Fabric</a></h3>
+    <h3><a href="/Fabric/1192">MC 1.19.2 Fabric</a></h3>
+    <h3><a href="/Fabric/1182">MC 1.18.2 Fabric</a></h3>
     <h1>BTA</h1>
     <h3><a href="./src/Minecraft_Optimization/BTA/MC_Opti_JP_All_BTA.html">MC β 1.7.3 Better Than Adventure</a></h3>
     <h1>Babric</h1>
     <h3><a href="./src/Minecraft_Optimization/Babric/MC_Opti_JP_All_Babric.html">MC β 1.7.3 Babric</a></h3>
     Made by HU_JA_JA and Contributors
-    <h3><a href="https://github.com/hu-ja-ja/Minecraft_Optimization_Mods">Source</a> <img src="./src/Minecraft_Optimization/assets/logo/github-mark-white.png" width="16" height="16" alt="github icon"></h3>
+    <h3><a href="https://github.com/hu-ja-ja/Minecraft_Optimization_Mods">Source</a> <img src="src\static\github-mark-white.png" width="16" height="16" alt="github icon"></h3>
 </body>
 
 <style>
