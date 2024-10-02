@@ -1,0 +1,722 @@
+# name: string
+# site: url
+# stability: "未検証","○","△","×"
+# desc: string
+
+# incomp: []
+# incomp:
+#   - "mod name"
+#   - "mod name"
+
+# client: 1,2,3
+#  1=必須 2=選択 3=不要
+# server: 1,2,3
+#  1=必須 2=選択 3=不要
+
+Mods:
+  - name: "Advancements Debug"
+    site: "https://modrinth.com/mod/advancements-debug/versions"
+    stability: "未検証"
+    desc: "Advancements Debugは、進捗システムの一つの関数を変更し、進捗チェックを高速化します。<br>また一部のStackOverflowErrorが修正されます。<br><h class=\"tips\">このModはサーバー側にも導入することができますが、サーバー側で問題が発生していない場合は入れる必要はありません。</h>"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "AdvancementsScreenOptimizer"
+    site: "https://modrinth.com/mod/advancementsscreenoptimizer/versions"
+    stability: "未検証"
+    desc: "AdvancementsScreenOptimizerは、進捗画面の<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>を最適化します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Alternate Current"
+    site: "https://modrinth.com/mod/alternate-current/versions"
+    stability: "△"
+    desc: "Alternate Currentは、レッドストーンダスト計算を最適化しブロックの更新の数を減らし負荷を軽減します。<br><h class=\"tips\">ただし、0-tickやブロックコンベアなどの一部の高度な装置が機能しないことがあります。<sup>※最近のアップデートで更新順序を変更できるようになったため、改善されている可能性があります。</sup></h>"
+    incomp: []
+    client: 3
+    server: 1
+
+  - name: "Achievements Optimizer"
+    site: "https://modrinth.com/mod/achievements-optimizer/versions"
+    stability: "○"
+    desc: "Achievements Optimizerは、進捗計算の処理を最適化します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Async Pack Scan"
+    site: "https://modrinth.com/mod/async-pack-scan/versions"
+    stability: "○"
+    desc: "Async Pack Scanは、リソースパック選択画面を最適解します。<br><h class=\"tips\">※1.20のjarがそのまま使えます。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "BadOptimizations"
+    site: "https://modrinth.com/mod/badoptimizations/versions"
+    stability: "○"
+    desc: "BadOptimizationsは、他のModが行っていない微細な最適化を集めたModです。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Better Beds"
+    site: "https://modrinth.com/mod/better-beds/versions"
+    stability: "○"
+    desc: "Better Bedsは、ベッドからブロックエンティティ<a href=\"https://wa3.i-3-i.info/word18052.html\" target=\"_blank\">レンダラー</a>を削除し、標準のMinecraftモデル<a href=\"https://wa3.i-3-i.info/word18052.html\" target=\"_blank\">レンダラー</a>に置き換えます。"
+    incomp: "Bedspreads"
+    client: 1
+    server: 3
+
+  - name: "BlinkLoad"
+    site: "https://modrinth.com/mod/blinkload"
+    stability: "△"
+    desc: "BlinkLoadは、<a href=\"https://x.gd/wROOG\" target=\"_blank\">アセット</a>を<a href=\"https://wa3.i-3-i.info/word139.html\" target=\"_blank\">キャッシュ</a>することで、Minecraftの起動時間を短縮します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Blocky Bubbles"
+    site: "https://modrinth.com/mod/blocky-bubbles/versions"
+    stability: "○"
+    desc: "Blocky Bubblesは、気泡柱のモデルを統合版のような軽量な見た目に変更します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Brute force Rendering Culling"
+    site: "https://modrinth.com/mod/brute-force-rendering-culling/versions"
+    stability: "×"
+    desc: "Brute force Rendering Cullingは、目に見えないチャンクを追加で<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Chunkumulator"
+    site: "https://modrinth.com/mod/chunkumulator/versions"
+    stability: "未検証"
+    desc: "Chunkumulatorは、サーバとの接続品質が悪い場合にチャンク送信を最適化します。"
+    incomp: "Concurrent Chunk<br>Management Engine"
+    client: 3
+    server: 1
+
+  - name: "Concurrent Chunk<br>Management Engine"
+    site: "https://modrinth.com/mod/c2me-fabric/versions"
+    stability: "×"
+    desc: "C^2M-Engine(略してC²ME)は、複数のCPUコアを並列に利用する(<a href=\"https://wa3.i-3-i.info/word12455.html\" target=\"_blank\">マルチスレッド</a>化)ことで、チャンク生成、<a href=\"https://wa3.i-3-i.info/word1598.html\" target=\"_blank\">I/O</a>、ロードのパフォーマンスを向上させます。"
+    incomp:
+      - "Chunkumulator"
+    client: 2
+    server: 1
+
+  - name: "Collision Fix"
+    site: "https://modrinth.com/mod/collision-fix/versions"
+    stability: "未検証"
+    desc: "Collision Fixは、Entity Collision FPS Fixのアップデートされた<a href=\"https://e-words.jp/w/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF.html\" target=\"_blank\">Fork</a>で、既にサーバー側で処理されたクライアント側でのエンティティの衝突を計算をスキップします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Cull Clouds"
+    site: "https://modrinth.com/mod/cullclouds"
+    stability: "○"
+    desc: "Cull Cloudsは、雲の見えない部分を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。<br><h class=\"tips\">ただしこれは非常に小さい最適化のため、FPSの向上はあまり期待できません。</h>"
+    incomp:
+      - "Extended Clouds"
+      - "SuperFancyClouds"
+    client: 1
+    server: 3
+
+  - name: "Cull Leaves"
+    site: "https://modrinth.com/mod/cull-leaves/versions"
+    stability: "○"
+    desc: "Cull Leavesは、葉っぱ内側のレイヤーの<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。<br><h class=\"tips\">Cull Leavesは、葉っぱの最外部のみを<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>します。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Cull Less Leaves"
+    site: "https://modrinth.com/mod/cull-less-leaves/versions"
+    stability: "○"
+    desc: "Cull Less Leavesは、葉っぱ内側のレイヤーの<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。<br><h class=\"tips\">Cull Less Leavesは、葉っぱ内部の層をある程度残した上でCull Leavesより軽量に動作します。</h>"
+    incomp:
+      - "More Culling"
+      - "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "Cull Particles"
+    site: "https://modrinth.com/mod/cull-particles"
+    stability: "未検証"
+    desc: "Cull Particlesは、パーティクルの見えない部分を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Cull Particles Fabric"
+    site: "https://www.curseforge.com/minecraft/mc-mods/cull-particles-fabric"
+    stability: "未検証"
+    desc: "Cull Particles Fabricは、パーティクルの見えない部分を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Cyclotrimethylenetrinitramine"
+    site: "https://modrinth.com/mod/c3h6n6o6/versions"
+    stability: "×"
+    desc: "Cyclotrimethylenetrinitramineは、Minecraftの<a href=\"https://wa3.i-3-i.info/word12455.html\">マルチスレッド</a>化(主に、エンティティ)を目指して作られました。<br><h class=\"tips\">ただし、かなりの変更を加えているため不安定であり、一部のModと競合します。</h>"
+    incomp:
+      - "Lithium(一部の機能を無効にすれば動作)"
+    client: 1
+    server: 1
+
+  - name: "DashLoader"
+    site: "https://modrinth.com/mod/dashloader/versions"
+    stability: "×"
+    desc: "DashLoaderは、Minecraftのすべてのコンテンツを<a href=\"https://wa3.i-3-i.info/word139.html\" target=\"_blank\">キャッシュ</a>することで、Minecraft<a href=\"https://x.gd/wROOG\" target=\"_blank\">アセット</a>ロードシステムを高速化します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Dynamic FPS"
+    site: "https://modrinth.com/mod/dynamic-fps/versions"
+    stability: "○"
+    desc: "Dynamic FPSは、ウィンドウがアクティブでない場合に<a href=\"https://x.gd/sc16T\" target=\"_blank\">フレームレート</a>を下げることで、GPUとCPUの使用量を自動的に削減します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Embeddium"
+    site: "https://modrinth.com/mod/embeddium/versions"
+    stability: "○"
+    desc: "Embeddiumは、Sodiumプロジェクトから分裂し独自路線を歩み始めた軽量化Mod。<h class=\"tips\">基本的にSodiumのアドオンは使用可能だが、<strong>Sodiumとは共存できない</strong>のでどちらかを選ぶ必要がある。</h>"
+    incomp:
+      - "Sodium"
+      - "Reese's Sodium Options"
+      - "Indium"
+    client: 1
+    server: 3
+
+  - name: "Enhanced Block Entities"
+    site: "https://modrinth.com/mod/ebe/versions"
+    stability: "△"
+    desc: "EBEは、一部のブロックエンティティに、ラグを伴うエンティティモデルではなく、<a href=\"https://x.gd/WaXjj\" target=\"_blank\">ベイク</a>されたブロックモデルを使用します。<br><h class=\"tips\">シュルカーボックスや、チェストなど一部ブロックエンティティの見た目がおかしくなる場合があります。</h>"
+    incomp:
+      - "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "Entity Collision FPS Fix"
+    site: "https://modrinth.com/mod/entity-collision-fps-fix/versions"
+    stability: "未検証"
+    desc: "Entity Collision FPS Fixは、既にサーバー側で処理されたクライアント側でのエンティティの衝突を計算をスキップします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Entity Culling"
+    site: "https://modrinth.com/mod/entityculling/versions"
+    stability: "○"
+    desc: "Entity Cullingは、他のCPUコア/スレッドを利用して、カメラからすべてのブロック/エンティティへの<a href=\"https://x.gd/yjdd1\" target=\"_blank\">パストレーシング</a>を実に素早く行い、それらが見えるか見えないかを判断します。<br><a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>中に見えていないものは、自分の後ろにあるエンティティと同じようにスキップされます。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Exordium"
+    site: "https://modrinth.com/mod/exordium/versions"
+    stability: "△"
+    desc: "Exordiumは、<a href=\"https://x.gd/YAPOe\" target=\"_blank\">HUD</a>をより低い固定<a href=\"https://x.gd/sc16T\" target=\"_blank\">フレームレート</a>で<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>(設定で設定可能)します。<br><h class=\"tips\">ただし、他Modとの互換性があまり高くなく、ImmediatelyFastを用いてもほぼ同等の効果が得られる他、作者も積極的にサポートを行うつもりがないと発言(Discordより)しているため、非推奨です。</h>"
+    incomp:
+      - "Canvas"
+      - "Caxton"
+      - "Vulkan"
+      - "and more..."
+    client: 1
+    server: 3
+
+  - name: "FastAnim"
+    site: "https://modrinth.com/mod/fastanim/versions"
+    stability: "×"
+    desc: "FastAnimは、エンティティアニメーションの計算を高速化します。(詳細はModrinthページの概要欄に)<br><strong><h class=\"tips\">※開発終了</h></strong>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "FastChest"
+    site: "https://modrinth.com/mod/fastchest/versions"
+    stability: "○"
+    desc: "FastChestは、チェストから動的モデルを削除し、静的なチャンクジオメトリとして<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>します。<h class=\"tips\">副作用として、チェストの蓋を開くアニメーションは失われます。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Fastload"
+    site: "https://modrinth.com/mod/fastload"
+    stability: "未検証"
+    desc: "Fastloadは、スポーンチャンクをロードしないことで、ワールドの生成・読み込みを素早く完了させます。(バニラのMinecraftはワールドを開くたびに21x21のチャンクをロードします。)<br><h class=\"tips\">※KsyxisやModernFixで代替でき、開発も終了しているため非推奨です</h>"
+    incomp:
+      - "Ksyxis"
+    client: 2
+    server: 2
+
+  - name: "Fast Paintings"
+    site: "https://modrinth.com/mod/fast-paintings/versions"
+    stability: "○"
+    desc: "Fast Paintingsは、絵画の<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>をブロックと同等の形式にし、パフォーマンスを向上させ、カスタムモデルを持てるようにします。"
+    incomp:
+      - "Vulkan"
+    client: 1
+    server: 1
+
+  - name: "Faster Particle Collisions"
+    site: "https://modrinth.com/mod/%22faster%22-particle-collisions"
+    stability: "×"
+    desc: "Faster Particle Collisionsは、パーティクルの衝突計算を最適化します。<br><h class=\"tips\">※これによって、いくつかの状況でパーティクルが奇妙に見える他、この動作に依存するModが動作しない可能性があります。<br>また、過度な最適化が不要な場合はParticle Coreなどの代替Modを使用すると良いでしょう。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Faster Random"
+    site: "https://modrinth.com/mod/faster-random/versions"
+    stability: "○"
+    desc: "Faster Randomは、MinecraftのRNGシステムを<b>最大</b>100倍高速化します。<br><h class=\"tips\">ただし、洞窟の生成をバニラと一部異なる方法にするため、注意が必要です。</h>"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "FastQuit"
+    site: "https://modrinth.com/mod/fastquit/versions"
+    stability: "○"
+    desc: "FastQuitは、ワールドが<a href=\"https://wa3.i-3-i.info/word11045.html\" target=\"_blank\">バックグラウンド</a>でセーブされている間に、タイトル画面へ素早く戻ることができます。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Ferrite Core"
+    site: "https://modrinth.com/mod/ferrite-core/versions"
+    stability: "○"
+    desc: "Ferrite Coreは、いくつかの異なる方法でMinecraftのメモリ使用量を減らします。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "FeyTweaks"
+    site: "https://modrinth.com/mod/feytweaks/versions"
+    stability: "○"
+    desc: "FeyTweaksは、看板や、ビーコンのビームを最適化します。"
+    incomp:
+      - "Vulkan"
+      - "FeyTweaks(一部の機能を無効にすれば動作)"
+    client: 1
+    server: 3
+
+  - name: "ForgetMeChunk"
+    site: "https://modrinth.com/mod/forgetmechunk/versions"
+    stability: "△"
+    desc: "ForgetMeChunkは、チャンクの境界を跨ぐ際に起こるラグを軽減します。<h class=\"tips\">ただし、これにより<a href=\"https://wa3.i-3-i.info/word16066.html\" target=\"_blank\">メモリリーク</a>が発生する可能性があります。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Fps Reducer"
+    site: "https://modrinth.com/mod/fps-reducer/versions"
+    stability: "○"
+    desc: "Fps Reducerは、ユーザー操作がない場合(インベントリ画面やメニュー画面を表示している際も)に<a href=\"https://x.gd/sc16T\" target=\"_blank\">フレームレート</a>を下げることで、GPUとCPUの使用量を自動的に削減します。"
+    incomp: "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "FX's Rail Optimization"
+    site: "https://modrinth.com/mod/rail-optimization/versions"
+    stability: "△"
+    desc: "FX's Rail Optimizationは、パワードレール/アクティベーターレールのオン/オフを最大4倍高速にします。<br><h class=\"tips\">ただし、レールを利用した一部の装置が正常に稼働しない場合があります。</h>"
+    incomp: []
+    client: 3
+    server: 1
+
+  - name: "Hydrogen"
+    site: "https://modrinth.com/mod/hydrogen/versions"
+    stability: "○"
+    desc: "Hydrogenは、いくつかの異なる方法でMinecraftのメモリ使用量を減らします。<h class=\"tips\">※開発終了、FerriteCoreで代替が可能なためそちらを使うことをお勧めします。</h>"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Icterine"
+    site: "https://modrinth.com/mod/icterine/versions"
+    stability: "△"
+    desc: "Icterineは、アイテム入手に関する進捗の計算を最適化します。<br><h class=\"tips\">多数の進捗を追加するDatapackなどと併用すると効果的です。<br>また、一部の動作がおかしくなる場合があります。</h>"
+    incomp: []
+    client: 3
+    server: 2
+
+  - name: "ImmediatelyFast"
+    site: "https://modrinth.com/mod/immediatelyfast/versions"
+    stability: "○"
+    desc: "ImmediatelyFastは、クライアントのイミディエイトモードの<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>性能を向上させます。"
+    incomp:
+      - "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "Krypton"
+    site: "https://modrinth.com/mod/krypton/versions"
+    stability: "○"
+    desc: "Kryptonは、Minecraftのネットワークスタックを最適化します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Ksyxis"
+    site: "https://modrinth.com/mod/ksyxis/versions"
+    stability: "○"
+    desc: "Ksyxisは、スポーンチャンクをロードしないことで、ワールドの生成・読み込みを素早く完了させます。(バニラのMinecraftはワールドを開くたびに21x21のチャンクをロードします。)<br><h class=\"tips\">※ModernFixにはスポーンチャンクを<b>完全に</b>削除する機能がありますが、どちらを使うかはお好みで。</h>"
+    incomp:
+      - "Fastload"
+    client: 2
+    server: 2
+
+  - name: "Language Reload"
+    site: "https://modrinth.com/mod/language-reload/versions"
+    stability: "○"
+    desc: "Language Reloadは、言語切り替えを素早く行えるようになるほか、言語を複数選択したり、言語の検索機能も追加します。(詳細はModrinthページの概要欄に)"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "lazy-language-loader"
+    site: "https://modrinth.com/mod/lazy-language-loader/versions"
+    stability: "○"
+    desc: "lazy-language-loaderは、言語切り替えをを素早く行えるようになります。<br><h class=\"tips\">基本的にはLanguage Reloadをお勧めしますが、選択画面をバニラに近づけたい場合はこちらを使用すると良いでしょう。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "LazyDFU"
+    site: "https://modrinth.com/mod/lazydfu/versions"
+    stability: "○"
+    desc: "LazyDFUは、DFU(DataFixerUpper)の初期化を遅らせることで、Minecraftの起動時間を短縮します。<br><h class=\"tips\">※1.19.4未満のバージョンではかなり効果がありましたが、Minecraft本体の最適化によってほぼ必要無くなりました</h>"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Lithium"
+    site: "https://modrinth.com/mod/lithium/versions"
+    stability: "○"
+    desc: "Lithiumは、バニラの動きを限りなく維持したまま、多くのシステム(<a href=\"https://x.gd/5klVR\" target=\"_blank\">物理エンジン</a>、モブAI、ブロックティックなど)を改善します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "MC-249136 Fix"
+    site: "https://modrinth.com/mod/mc-249136-fix/versions"
+    stability: "×"
+    desc: "MC-249136 Fixは、<a href=\"https://bugs.mojang.com/browse/MC-249136\" target=\"_blank\">MC-249136</a>に対する最小限のハック的な修正を実装します。"
+    incomp: []
+    client: 3
+    server: 1
+
+# ↓1.19.3はModrinthのリンク使ってな～
+  - name: "MCMTFabric"
+    site: "https://github.com/himekifee/MCMTFabric/releases"
+    stability: "×"
+    desc: "MCMTFabricは、<a href=\"https://www.curseforge.com/minecraft/mc-mods/mcmt-multithreading\">JMT-MCMT</a>に基づいて作られたModで、Minecraftの<a href=\"https://wa3.i-3-i.info/word12455.html\">マルチスレッド</a>化(主に、エンティティやディメンションなど)を目指して作られました。<br><h class=\"tips\">ただし、かなりの変更を加えているため不安定であり、かつ様々なModと競合するので常用には向きません。</h>"
+    incomp:
+      - "Lithium"
+      - "VMP"
+      - "C2ME"
+      - "Carpet Fixes"
+    client: 2
+    server: 2
+
+  - name: "MCMTFabricCE"
+    site: "https://github.com/KenRouKoro/MCMTFabricCE/releases"
+    stability: "×"
+    desc: "MCMTFabricCEは、MCMTFabricのForkで互換性に力を入れたバージョンです。"
+    incomp:
+      - "Lithium"
+      - "C2ME"
+    client: 1
+    server: 1
+
+  - name: "Memory Leak Fix"
+    site: "https://modrinth.com/mod/memoryleakfix/versions"
+    stability: "○"
+    desc: "Memory Leak FixはMinecraftにある複数の<a href=\"https://wa3.i-3-i.info/word16066.html\" target=\"_blank\">メモリリーク</a>を修正します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Methane"
+    site: "https://modrinth.com/mod/methane/versions"
+    stability: "△"
+    desc: "Methaneは、ライトマッパーの多くの機能を無効にし、破壊的にパフォーマンスを向上させます。"
+    incomp:
+      - "Starlight"
+      - "Phosphor"
+    client: 1
+    server: 3
+
+  - name: "ModernFix"
+    site: "https://modrinth.com/mod/modernfix/versions"
+    stability: "○"
+    desc: "ModernFixは、パフォーマンスを向上させ、メモリ使用量を減らし、多くのバグを修正します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Moonrise"
+    site: "https://modrinth.com/mod/moonrise-opt"
+    stability: "未検証"
+    desc: "Moonriseは、Paperの主な最適化を移植したModです。<br><h class=\"tips\">ですがPaperと違い、バニラの動作を変更することはありません。</h>"
+    incomp:
+      - "C2ME"
+      - "ScalableLux"
+    client: 3
+    server: 1
+
+  - name: "More Culling"
+    site: "https://modrinth.com/mod/moreculling/versions"
+    stability: "○"
+    desc: "More Cullingは、複数の種類の<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>の処理方法を変更します。"
+    incomp:
+      - "Cull Less Leaves"
+    client: 1
+    server: 3
+
+  - name: "More Culling Extra"
+    site: "https://modrinth.com/mod/morecullingextra/versions"
+    stability: "○"
+    desc: "More Culling Extraは、More Cullingに入っていない細かな機能を追加します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Noisium"
+    site: "https://modrinth.com/mod/noisium/versions"
+    stability: "○"
+    desc: "Noisiumは、他のModが変更していないいくつかのワールド生成関数を変更します。これにより、新しいチャンクを生成する際の速度が20 ~ 30%向上します。"
+    incomp: []
+    client: 3
+    server: 1
+
+  - name: "Nvidium"
+    site: "https://modrinth.com/mod/nvidium/versions"
+    stability: "△"
+    desc: "NvidiumはSodiumの代替<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a><a href=\"https://wa3.i-3-i.info/word18738.html\" target=\"_blank\">バックエンド</a>で、Nvidia GPUのみのOpenGL拡張機能を使用し、パフォーマンスを大幅に向上させます。"
+    incomp:
+      - "AMD GPU"
+      - "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "OptiPainting"
+    site: "https://modrinth.com/mod/optipainting/versions"
+    stability: "未検証"
+    desc: "OptiPaintingは、絵画の表示されない側面を<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>しないようにします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Palladium"
+    site: "https://modrinth.com/mod/mpalladium"
+    stability: "未検証"
+    desc: "Palladiumは、余計な重複を改善したり、メモリ制御の改善をします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Particle Blocker"
+    site: "https://modrinth.com/mod/particles/versions"
+    stability: "○"
+    desc: "Particle Blockerは、要らないパーティクルを選択し、<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>しないようにします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Particle Core"
+    site: "https://modrinth.com/mod/particle-core"
+    stability: "○"
+    desc: "Particle Coreは、パーティクルの見えない部分を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>したり、<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>を最適化します。<br>また、設定でパーティクルの生成を完全にオフにすることができます。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Phosphor"
+    site: "https://modrinth.com/mod/phosphor/versions"
+    stability: "○"
+    desc: "Phosphorは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンを書き直します。<br><h class=\"tips\">軽量化の度合いはStarlightの方が高いですが、安定性はPhosphorの方が優れています。</h>"
+    incomp:
+      - "Starlight"
+    client: 2
+    server: 2
+
+  - name: "RailOptimization"
+    site: "https://modrinth.com/mod/railoptimization/versions"
+    stability: "△"
+    desc: "RailOptimizationは、<a href=\"https://modrinth.com/mod/rail-optimization/\">FX's Rail Optimization</a>のForkで、パワードレール/アクティベーターレールのオン/オフを最大4倍高速にします。<br><h class=\"tips\">ただし、レールを利用した一部の装置が正常に稼働しない場合があります。</h>"
+    incomp:
+      - "Carpet TIS Addition"
+    client: 3
+    server: 2
+
+  - name: "Reese's Sodium Options"
+    site: "https://modrinth.com/mod/reeses-sodium-options/versions"
+    stability: "○"
+    desc: "Reese's Sodium Optionsは、Sodiumのオプション画面を使いやすい形に置き換えます。"
+    incomp:
+      - "Vulkan"
+      - "Embeddium"
+    client: 1
+    server: 3
+
+  - name: "Remove Reloading Screen"
+    site: "https://modrinth.com/mod/rrls/versions"
+    stability: "○"
+    desc: "Remove Reloading Screenは、リソースパックを読み込む際のロード画面を無くし、読み込み中でも操作ができるようにします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "ScalableLux"
+    site: "https://modrinth.com/mod/scalablelux"
+    stability: "未検証"
+    desc: "ScalableLuxは、開発終了したStarlightを1.21以降へForkしたModです。"
+    incomp: "Moonrise"
+    client: 2
+    server: 2
+
+  - name: "Seaborgium"
+    site: "https://modrinth.com/mod/seaborgium/versions"
+    stability: "未検証"
+    desc: "Seaborgiumは、他のModが行っていない微細な最適化を実装したModです。<br><h class=\"tips\">例えば、HUD上に大量のハートが<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>されている場合などに効果を発揮します。</h><br><strong><h class=\"tips\">※開発終了</h></strong>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Server Pinger Fixer"
+    site: "https://modrinth.com/mod/serverpingerfixer/versions"
+    stability: "○"
+    desc: "Server Pinger Fixerは、マルチサーバーリストのPing送信速度を改善します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Smooth Boot"
+    site: "https://modrinth.com/mod/smoothboot-fabric/versions"
+    stability: "○"
+    desc: "Smooth Bootは、CPUのスケジューリングを改善することで、Minecraftの起動時間を短縮します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Sodium"
+    site: "https://modrinth.com/mod/sodium/versions"
+    stability: "○"
+    desc: "Sodiumは、Minecraftのパフォーマンスを大幅に向上させる最新の<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>エンジンです。"
+    incomp:
+      - "Embeddium"
+      - "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "Sodium Extra"
+    site: "https://modrinth.com/mod/sodium-extra/versions"
+    stability: "○"
+    desc: "Sodium Extraは、OptiFineの目玉オプションのほとんどをSodiumに移植します。"
+    incomp:
+      - "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "Sodium Leaf Culling"
+    site: "https://modrinth.com/mod/sodiumleafculling"
+    stability: "未検証"
+    desc: "Sodium Leaf Cullingは、葉っぱ内側のレイヤーの<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>を<a href=\"https://www.youtube.com/watch?v=VqH8kcmD-HI\" target=\"_blank\">カリング</a>します。<br><h class=\"tips\">Sodium Leaf Cullingは、Sodiumのコードに直接働きかけより効率的で、いくつかの新しい機能も追加されいます。</h>"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Starlight"
+    site: "https://modrinth.com/mod/starlight/versions"
+    stability: "○"
+    desc: "Starlightは、ライティングのパフォーマンス向上とライティングエラーの修正のためにライトエンジンをかなり書き直します。<br><h class=\"tips\">※1.20(<a href=\"https://www.minecraft.net/en-us/article/minecraft-snapshot-23w17a\" target=\"_blank\">23w17a</a>)から、バニラのライトエンジンが変更され、クライアント側でほぼ必要無くなりました。</h>"
+    incomp:
+      - "Vulkan"
+    client: 2
+    server: 2
+
+  - name: "Starlight Legacy"
+    site: "https://modrinth.com/mod/starlight-legacy"
+    stability: "未検証"
+    desc: "Starlight Legacyは、Starlightを1.15以前のバージョンへForkしたModです。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "StutterFix"
+    site: "https://modrinth.com/mod/stutterfix/versions"
+    stability: "未検証"
+    desc: "StutterFixは、ゲームのメインスレッドを設定し、新しいチャンクを生成する際に起こる<a href=\"https://my-favorite.me/g-sync-freesync/#index_id1\" target=\"_blank\">スタッタリング</a>を軽減します。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "ThreadTweak"
+    site: "https://modrinth.com/mod/threadtweak/versions"
+    stability: "○"
+    desc: "ThreadTweakは、Minecraftの<a href=\"https://wa3.i-3-i.info/word12453.html\" target=\"_blank\">スレッド</a>スケジューリングを改善します。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "ThreatenGL"
+    site: "https://modrinth.com/mod/threatengl"
+    stability: "未検証"
+    desc: "ThreatenGLは、Minecraftが現状使用しているOpenGL3.2をより新しいOpenGL4.6へ置き換えます。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Too Many Players"
+    site: "https://modrinth.com/mod/tmp/versions"
+    stability: "○"
+    desc: "Too Many Playersは、視界内に多くのプレイヤーがいる場合に、頭を除くプレイヤーの要素を<a href=\"https://x.gd/v4OP4\" target=\"_blank\">レンダリング</a>しないようにします。"
+    incomp: []
+    client: 1
+    server: 3
+
+  - name: "Very Many Players"
+    site: "https://modrinth.com/mod/vmp-fabric/versions"
+    stability: "×"
+    desc: "VMPは、プレイヤー数が特に多いサーバーでのパフォーマンスを向上させます。"
+    incomp: []
+    client: 2
+    server: 2
+
+  - name: "Video Tape"
+    site: "https://modrinth.com/mod/videotape/versions"
+    stability: "○"
+    desc: "Video Tapeは、GPU関連の<a href=\"https://wa3.i-3-i.info/word16066.html\" target=\"_blank\">メモリリーク</a>を修正します。"
+    incomp: "Vulkan"
+    client: 1
+    server: 3
+
+  - name: "VulkanMod"
+    site: "https://modrinth.com/mod/vulkanmod/versions"
+    stability: "△"
+    desc: "VulkanModは、MinecraftのOpenGL<a href=\"https://wa3.i-3-i.info/word18052.html\" target=\"_blank\">レンダラー</a>をVulkan APIを使った最適化された<a href=\"https://wa3.i-3-i.info/word18052.html\" target=\"_blank\">レンダラー</a>に置き換えます。<br><h class=\"tips\">ただし、OpenGLに依存するかなりのModと競合します(詳しいModリストは公式Discordに)</h>"
+    incomp:
+      - "OpenGLに依存する全てのMod"
+    client: 1
+    server: 3
+
+#  - name: 
+#    site: 
+#    stability: 
+#    desc: 
+#    incomp: 
+#    client: 
+#    server: 

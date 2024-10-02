@@ -1,20 +1,38 @@
-# Minecraft Optimization Mods
+# create-svelte
 
-## ※整備中
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-Minecraftを快適に遊ぶためのいわゆる軽量化Modリスト
+## Creating a project
 
-### 但し書き
+If you're seeing this, you've probably already done this step. Congrats!
 
-- あくまで全ての軽量化Modのリストを作成したいという考えに基づいて作成しているため、このリストに載っている全てのModを導入することは推奨しません
-- 便利系やバグ修正など軽量化を目的としていないModはあえて掲載していません
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-ㅤ
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-現状一人で編集している都合上、主観マシマシで間違っている点もあると思います:/
+## Developing
 
-何か間違っているところを発見されたり、要望、追加して欲しいModなどがありましたら、[Issue](https://github.com/hu-ja-ja/Minecraft-Optimization-Mods/issues)か[Pull request](https://github.com/hu-ja-ja/Minecraft-Optimization-Mods/pulls)を投げていただけるとありがたいです
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
----
+```bash
+npm run dev
 
-#### [旧リポジトリ](https://github.com/TaichiServer/modDescription)
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
